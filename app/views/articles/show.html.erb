@@ -1,0 +1,6 @@
+<div class="container">
+  <div id="sub_container">
+    <h2><%= @article.title %></h2><%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe ,url_for(action: :destroy,id: @article.id),method: :delete, data: {confirm: "Are you sure?"} %></i><%= link_to '<i class="fas fa-pencil-alt"></i>'.html_safe , edit_article_path %></i>
+    <h4><%= @article.content %></h4>
+  </div>
+</div>
